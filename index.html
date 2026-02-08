@@ -949,144 +949,13 @@
             font-size: 1rem;
         }
 
-        /* Загрузка фото */
-        .photo-upload-section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 25px;
-            margin-bottom: 20px;
-        }
+       
 
-        @media (max-width: 768px) {
-            .photo-upload-section {
-                grid-template-columns: 1fr;
-            }
-        }
+       
+        
 
-        .photo-upload-box {
-            background: rgba(15, 23, 42, 0.5);
-            border: 3px solid var(--color-secondary);
-            border-radius: 15px;
-            padding: 25px;
-            text-align: center;
-            transition: var(--transition);
-            cursor: pointer;
-            min-height: 250px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .photo-upload-box.has-photo {
-            padding: 15px;
-            justify-content: flex-start;
-            min-height: 300px;
-        }
-
-        .photo-upload-box::before {
-            content: '';
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            right: -2px;
-            bottom: -2px;
-            background: linear-gradient(45deg, var(--color-accent), var(--color-primary-light), var(--color-accent));
-            border-radius: 17px;
-            z-index: -1;
-            opacity: 0;
-            transition: var(--transition);
-        }
-
-        .photo-upload-box:hover::before {
-            opacity: 1;
-            animation: pulse 2s infinite;
-        }
-
-        .photo-upload-box:hover {
-            transform: translateY(-5px);
-            border-color: var(--color-accent);
-        }
-
-        .photo-upload-box i {
-            font-size: 3.5rem;
-            color: var(--color-accent);
-            margin-bottom: 20px;
-            transition: var(--transition);
-        }
-
-        .photo-upload-box.has-photo i {
-            display: none;
-        }
-
-        .photo-upload-box:hover i {
-            transform: scale(1.2);
-            color: var(--color-primary-light);
-        }
-
-        .photo-upload-box h4 {
-            color: var(--color-light);
-            margin-bottom: 10px;
-            font-size: 1.4rem;
-            font-weight: 600;
-        }
-
-        .photo-upload-box.has-photo h4 {
-            margin-bottom: 15px;
-            font-size: 1.2rem;
-        }
-
-        .photo-upload-box p {
-            color: #cbd5e1;
-            font-size: 0.95rem;
-            margin-bottom: 20px;
-        }
-
-        .photo-upload-box.has-photo p {
-            display: none;
-        }
-
-        .photo-upload-btn {
-            background: var(--color-primary);
-            color: white;
-            border: none;
-            padding: 12px 25px;
-            border-radius: 8px;
-            cursor: pointer;
-            font-weight: 600;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            z-index: 2;
-        }
-
-        .photo-upload-box.has-photo .photo-upload-btn {
-            display: none;
-        }
-
-        .photo-upload-btn:hover {
-            background: var(--color-primary-light);
-            transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(59, 130, 246, 0.4);
-        }
-
-        .photo-preview {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 10px;
-            display: none;
-            border: 3px solid var(--color-accent);
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-            margin-bottom: 10px;
-        }
-
-        .photo-preview.active {
-            display: block;
-            animation: scaleIn 0.5s ease;
+       
+    
         }
 
         /* История моек - УЛУЧШЕННАЯ ВЕРСИЯ */
@@ -2646,4 +2515,5 @@
         }
     </script>
 </body>
+
 </html>
